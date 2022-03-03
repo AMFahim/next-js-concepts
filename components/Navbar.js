@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
@@ -7,8 +7,8 @@ const Navbar = () => {
       <div className={styles.menu_bar}>
         <div>
           <ul>
-            <li><Link className={styles.text_style} href="#"><a>Home</a></Link></li>
-            <li><Link className={styles.text_style} href="#"><a>Drop Down</a></Link>
+            <li><Link className={styles.text_style} href="/"><a>Home</a></Link></li>
+            <li><Link className={styles.text_style} href="/about"><a>Dropdown</a></Link>
 
               <div className={styles.dropdown_menu}>
                 <ul>
@@ -29,13 +29,18 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li><a className={styles.text_style} href="#">Blog</a>
+            <li><Link href="/fahim"><a className={styles.text_style}>Fahim</a></Link>
             </li>
-            <li><a className={styles.text_style} href="#">About</a></li>
-            <li><a className={styles.text_style} href="#">Contact us</a></li>
+            <li><Link className={styles.text_style} href="/about"><a>About</a></Link>
+            </li>
           </ul>
         </div>
       </div>
+      {/* <ul>
+        <li><Link href="/"><a>Home</a></Link></li>
+        <li><Link href="/about"><a>About</a></Link></li>
+        <li><Link href="/fahim"><a>Fahim</a></Link></li>
+      </ul> */}
     </div >
   );
 };

@@ -1,12 +1,12 @@
-:root {
+/* :root {
   --color-primary: #ff3300;
   --color-white: #e9e9e9;
   --color-black: #141d28;
   --color-black-1: #212b38;
-}
+} */
 
 .menu_bar {
-  background-color: var(--color-black);
+  background-color: #141d28;
   height: 80px;
   width: 100%;
   display: flex;
@@ -31,14 +31,14 @@
 
 .menu_bar ul li a {
   font-size: 20px;
-  color: var(--color-white);
+  color: #e9e9e9;
   text-decoration: none;
 
   transition: all 0.3s;
 }
 
 .menu_bar ul li a:hover {
-  color: var(--color-primary);
+  color: #ff3300;
 }
 
 /* .fas {
@@ -57,7 +57,7 @@
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: var(--color-black);
+  background-color: #141d28;
 }
 
 .menu_bar ul li:hover .dropdown_menu ul {
@@ -79,5 +79,5 @@
   position: absolute;
   left: 150px;
   top: 0;
-  background-color: var(--color-black);
+  background-color: #141d28;
 }
